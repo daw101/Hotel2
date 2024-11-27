@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Reservation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .room-info {
+            font-size: 14px;
+            color: #000;
+        }
+
+        .room-info i {
+            font-size: 24px;
+            color: #0056b3;
+        }
+
+        .room-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .room-description {
+            font-size: 14px;
+            color: #000;
+        }
+
+        .room-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .select-button,
+        .btn-primary {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff; 
+        }
+
+        .select-button:hover,
+        .btn-primary:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+        }
+
+        .room-card {
+            border: 1px solid #e0e0e0;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .room-card img {
+            border-radius: 8px;
+        }
+
+        .room-card .card-body {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="Hotel Logo" width="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bold px-3 py-2 rounded hover:bg-primary hover:text-white transition"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bold px-3 py-2 rounded hover:bg-primary hover:text-white transition"
+                            href="rooms.html">Rooms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="rooms" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Rooms</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="deluxe.jpg.jfif" class="card-img-top" alt="Deluxe Room">
+                        <div class="card-body">
+                            <h5 class="room-title">Deluxe Room</h5>
+                            <p class="room-description">A luxurious room with all modern amenities.</p>
+                            <div class="row">
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <div>22 m²</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-user-friends"></i>
+                                    <div>2</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-bed"></i>
+                                    <div>1 Queen Bed</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-snowflake"></i>
+                                    <div>AC</div>
+                                </div>
+                            </div>
+                            <div class="room-price mt-2">108.31 EUR</div>
+                            <button class="select-button mt-2">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="familiar.jpg.jfif" class="card-img-top" alt="Family Room">
+                        <div class="card-body">
+                            <h5 class="room-title">Family Room</h5>
+                            <p class="room-description">Spacious room perfect for families.</p>
+                            <div class="row">
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <div>40 m²</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-user-friends"></i>
+                                    <div>4</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-bed"></i>
+                                    <div>2 Queen Beds</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-snowflake"></i>
+                                    <div>AC</div>
+                                </div>
+                            </div>
+                            <div class="room-price mt-2">159.99 EUR</div>
+                            <button class="select-button mt-2">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="romantic.jpg.jfif" class="card-img-top" alt="Romantic Room">
+                        <div class="card-body">
+                            <h5 class="room-title">Romantic Room</h5>
+                            <p class="room-description">A cozy and intimate room perfect for couples looking for a romantic getaway.</p>
+                            <div class="row">
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <div>18 m²</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-user-friends"></i>
+                                    <div>2</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-bed"></i>
+                                    <div>1 King Bed</div>
+                                </div>
+                                <div class="col-3 text-center room-info">
+                                    <i class="fas fa-snowflake"></i>
+                                    <div>AC</div>
+                                </div>
+                            </div>
+                            <div class="room-price mt-2">128.50 EUR</div>
+                            <button class="select-button mt-2">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="reservation">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Complete Your Reservation</h2>
+            <form class="bg-white p-4 rounded shadow-sm mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="mb-3">
+                    <label for="payment" class="form-label">Payment Details</label>
+                    <input type="text" class="form-control" id="payment" placeholder="Card Number">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white" id="contact">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Contact Us</h2>
+            <form class="bg-light p-4 rounded shadow-sm mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea class="form-control" id="contact-message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">© 2023 Gran Hotel Peñíscola. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
